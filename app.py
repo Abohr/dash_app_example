@@ -4,12 +4,12 @@
 # In[ ]:
 
 
-import plotly.graph_objs as go
+
 import pandas as pd
+import plotly.graph_objs as go
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
-
 
 app = dash.Dash(__name__)
 server=app.server
@@ -153,7 +153,7 @@ def update_graph_b(country_name, yaxis_column_b_name,):
         )],
         'layout': go.Layout(
             xaxis={
-                'title': 'YEAR',
+                'title': 'Year',
                 'type': 'linear' 
             },
             yaxis={
@@ -168,12 +168,6 @@ def update_graph_b(country_name, yaxis_column_b_name,):
 
 if __name__ == '__main__':
     app.run_server()
-
-
-# In[ ]:
-
-
-
 
 
 # In[ ]:
